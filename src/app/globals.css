@@ -62,4 +62,10 @@
   .link {
     @apply dark:text-blue-500 text-blue-700 underline;
   }
+  del {
+    @apply me-2 text-gray-500;
+  }
+  .big-title {
+    @apply text-gray-900 dark:text-white tracking-tight text-3xl sm:text-4xl font-bold;
+  }
 }
