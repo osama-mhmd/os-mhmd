@@ -7,9 +7,7 @@ export default function Home() {
     <main>
       <section>
         <div className="container section text-center">
-          <span className="text-gray-900 dark:text-white tracking-tight text-4xl font-bold">
-            Osama Mohammed
-          </span>
+          <span className="big-title">Osama Mohammed</span>
           <p className="text-muted-foreground max-w-prose -translate-y-2">
             Senior full stack web developer (mainly next.js). You can pick up
             already made templates from{" "}
@@ -18,7 +16,10 @@ export default function Home() {
             </Link>
             . Or hire me 👇 to create your own idea.
           </p>
-          <Link href="/hire" className={buttonVariants()}>
+          <Link
+            href="mailto:mail.osmhmd@gmail.com"
+            className={buttonVariants()}
+          >
             Hire me now <BriefcaseIcon className="mx-2" />
           </Link>
         </div>
