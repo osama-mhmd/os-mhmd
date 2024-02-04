@@ -1,0 +1,116 @@
+<section>
+  <div [ngClass]="slider(1)">
+    <div class="container">
+      <h1>Hi 👋!</h1>
+      I am Osama Mohammed. Full stack web developer. My latest blogs:
+      <div class="embed embed-red embed-soon">
+        <h3>Future-forward programming: top advices for 2024</h3>
+        <p>
+          With the huge improvement of AI, the *coders* will disappear. So, the
+          first advice is to be a programmer not a coder. Learn how this
+          works...
+        </p>
+      </div>
+      <div class="embed embed-red embed-soon">
+        <h3>How to deal with all these technologies</h3>
+        <p>
+          Every day, I see new technology appear, and some mindless programmers
+          go for it without any reasons, so How to know if you are in need for
+          it or not...
+        </p>
+      </div>
+    </div>
+  </div>
+  <div [ngClass]="slider(2)">
+    <div class="container">
+      <h1>Technologies</h1>
+      <h3>Frameworks</h3>
+      <div class="card">
+        <img src="assets/angular.png" alt="angular" />
+        <div>
+          <h3><a href="https://angular.io">Angular</a></h3>
+          Experience: Beginner - <span class="chosen">Mid-level</span> - Expert
+          <p class="card-muted-foreground">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+            magnam numquam nihil reprehenderit explicabo minima, rem quibusdam,
+            inventore velit non adipisci facere architecto libero fugit quos
+            commodi excepturi, eaque repellat.
+          </p>
+          <p>
+            Examples: <
+            <a href="https://github.com/osama-mhmd/os-mhmd"
+              >osama-mhmd/os-mhmd</a
+            >
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [ngClass]="slider(3)">
+    <div class="container">
+      <h1 (click)="keyboardSwitcher()">Technologies</h1>
+      <h3 (click)="switchSlide(6)">Frameworks</h3>
+      <div class="card">
+        <img src="assets/nextjs.png" alt="nextjs" />
+        <div>
+          <h3><a href="https://nextjs.org">Next.js</a></h3>
+          Experience: Beginner - Mid-level - <span class="chosen">Expert</span>
+          <p class="card-muted-foreground">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+            magnam numquam nihil reprehenderit explicabo minima, rem quibusdam,
+            inventore velit non adipisci facere architecto libero fugit quos
+            commodi excepturi, eaque repellat.
+          </p>
+          <p>
+            Examples: <
+            <a href="https://github.com/osama-mhmd/hadith">osama-mhmd/hadith</a>
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [ngClass]="slider(4)">
+    <h1 (click)="keyboardSwitcher()">Technologies</h1>
+    <h3 (click)="switchSlide(6)">Languages</h3>
+    HTML, JS, TS, CSS
+  </div>
+  <div [ngClass]="slider(5)">
+    <div class="container">
+      <h1>Experiences</h1>
+      <div class="card">
+        <img src="assets/7ades.png" alt="hadith" />
+        <div>
+          <h3><a href="https://7ades.vercel.app">Hadith</a></h3>
+          <p class="card-muted-foreground">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+            voluptatibus debitis dignissimos maiores error quibusdam, accusamus
+            veniam, quia asperiores, officiis esse consequuntur dolore mollitia
+            illum! Temporibus, distinctio? Facilis, debitis fugit!
+          </p>
+          <p>Technologies: <br /></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [ngClass]="slider(6)">
+    <h1>Experiences</h1>
+    I have worked a lot
+  </div>
+  <div [ngClass]="slider(7)">
+    <h1>Experiences</h1>
+    I have worked a lot
+  </div>
+  <div [ngClass]="slider(8)">
+    <h1>Get in touch</h1>
+    I have worked a lot
+  </div>
+  <footer>
+    <div *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8]">
+      <span (click)="switchSlide(item)" [ngClass]="active(item)"></span>
+    </div>
+  </footer>
+</section>
+
+<router-outlet />
