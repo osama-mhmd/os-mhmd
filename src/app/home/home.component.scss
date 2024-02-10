@@ -1,0 +1,16 @@
+section > div {
+  padding: 1rem 2rem;
+  border-left: 10px solid rgb(172, 172, 172);
+}
+.contact-icons {
+  padding-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.contact-icons img {
+  width: 40px;
+  background-color: white;
+  height: 40px;
+  border-radius: 50%;
+  padding: 2px;
+}

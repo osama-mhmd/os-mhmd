@@ -1,8 +1,23 @@
 <section>
-  <div [ngClass]="slider(1)">
+  <div>
     <div class="container">
       <h1>Hi 👋!</h1>
-      I am Osama Mohammed. Full stack web developer. My latest blogs:
+      Hi! I am Osama Mohammed, full stack web developer:
+      <div class="contact-icons">
+        <a href="https://github.com/osama-mhmd"
+          ><img src="assets/github.png" alt="github"
+        /></a>
+        <a href="https://x.com/os_mhmd"
+          ><img src="assets/twitter.png" alt="twitter"
+        /></a>
+        <a href="https://x.com/os_mhmd"
+          ><img src="assets/linkedin.png" alt=""
+        /></a>
+        <a href="mailto:mail.osmhmd@gmail.com"
+          ><img src="assets/email.png" alt="mail"
+        /></a>
+      </div>
+      <hr />
       <div class="embed embed-red embed-soon">
         <h3>Future-forward programming: top advices for 2024</h3>
         <p>
@@ -21,7 +36,7 @@
       </div>
     </div>
   </div>
-  <div [ngClass]="slider(2)">
+  <div>
     <div class="container">
       <h1>Technologies</h1>
       <h3>Frameworks</h3>
@@ -45,13 +60,7 @@
           </p>
         </div>
       </div>
-    </div>
-  </div>
-  <div [ngClass]="slider(3)">
-    <div class="container">
-      <h1 (click)="keyboardSwitcher()">Technologies</h1>
-      <h3 (click)="switchSlide(6)">Frameworks</h3>
-      <div class="card">
+      <div class="card mt-6">
         <img src="assets/nextjs.png" alt="nextjs" />
         <div>
           <h3><a href="https://nextjs.org">Next.js</a></h3>
@@ -71,13 +80,8 @@
       </div>
     </div>
   </div>
-  <div [ngClass]="slider(4)">
-    <h1 (click)="keyboardSwitcher()">Technologies</h1>
-    <h3 (click)="switchSlide(6)">Languages</h3>
-    HTML, JS, TS, CSS
-  </div>
-  <div [ngClass]="slider(5)">
-    <div class="container">
+  <div>
+    <div class="container mt-6">
       <h1>Experiences</h1>
       <div class="card">
         <img src="assets/7ades.png" alt="hadith" />
@@ -89,28 +93,34 @@
             veniam, quia asperiores, officiis esse consequuntur dolore mollitia
             illum! Temporibus, distinctio? Facilis, debitis fugit!
           </p>
-          <p>Technologies: <br /></p>
+          <p class="line-spacing-2">
+            <span class="badge">Next.js</span
+            ><span class="badge">Typescript</span
+            ><span class="badge">Tailwindcss</span
+            ><span class="badge">JS: Fetch</span>
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <div [ngClass]="slider(6)">
-    <h1>Experiences</h1>
-    I have worked a lot
-  </div>
-  <div [ngClass]="slider(7)">
-    <h1>Experiences</h1>
-    I have worked a lot
-  </div>
-  <div [ngClass]="slider(8)">
-    <h1>Get in touch</h1>
-    I have worked a lot
-  </div>
-  <footer>
-    <div *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8]">
-      <span (click)="switchSlide(item)" [ngClass]="active(item)"></span>
+  <div>
+    <div class="container">
+      <h1>Bye 😓</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+        accusantium sunt nemo similique ipsa! Possimus dolorem omnis corrupti,
+        totam odit magni corporis ut, odio asperiores mollitia neque, voluptate
+        dolore voluptates?
+      </p>
+      <h3>Who is Osama?</h3>
+      <p class="card-muted-foreground">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, beatae
+        architecto! Earum, odit. Necessitatibus, recusandae. Minima, numquam
+        animi consectetur blanditiis eum commodi! Eaque praesentium, qui non
+        amet aspernatur sint doloribus.
+      </p>
+      <hr />
+      <p class="y-center">2024 - Osama Mohammed</p>
     </div>
-  </footer>
+  </div>
 </section>
-
-<router-outlet />
